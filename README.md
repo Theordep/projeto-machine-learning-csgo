@@ -2,7 +2,7 @@
 
 Trabalho final de **Machine Learning Clássico**: prever vitória de round com base em **economia e armamento**.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Theordep/projeto-machine-learning-csgo/blob/main/notebooks/00_Setup_Colab.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Theordep/projeto-machine-learning-csgo/blob/main/notebooks/00_Setup_Colab.ipynb) · [Projeto completo](https://colab.research.google.com/github/Theordep/projeto-machine-learning-csgo/blob/main/notebooks/COLAB_PROJETO-COMPLETO.ipynb)
 
 ## Início rápido
 
