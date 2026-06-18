@@ -1,0 +1,36 @@
+# Dados (baixados no Colab via kagglehub — não versionar)
+data/
+*.csv
+*.parquet
+
+# Kaggle / credenciais
+kaggle.json
+.kaggle/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Artefatos locais grandes (opcional versionar métricas pequenas)
+models/*.pkl
+models/*.joblib
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Relatório compilado (manter fontes .md/.tex se quiser)
+*.aux
+*.log
+*.out
+*.toc
