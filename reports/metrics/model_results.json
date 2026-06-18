@@ -1,0 +1,49 @@
+{
+  "rows_used": 33365,
+  "svm_max_train_samples": 6000,
+  "note": "Métricas de referência (pipeline local validado). Reproduza no Colab via 03_Modelagem ou COLAB_PROJETO-COMPLETO.",
+  "classification": {
+    "logistic_regression": {
+      "best_params": { "clf__C": 0.1 },
+      "accuracy": 0.7743,
+      "f1": 0.7701,
+      "roc_auc": 0.878
+    },
+    "random_forest": {
+      "best_params": { "clf__max_depth": 20, "clf__min_samples_leaf": 1 },
+      "accuracy": 0.9044,
+      "f1": 0.9027,
+      "roc_auc": 0.9704
+    },
+    "svm_rbf": {
+      "best_params": { "clf__C": 1.0, "clf__gamma": "scale" },
+      "accuracy": 0.7806,
+      "f1": 0.7798,
+      "roc_auc": 0.8781,
+      "train_samples": 6000,
+      "subsampled_for_training": true
+    },
+    "knn": {
+      "best_params": { "clf__n_neighbors": 11 },
+      "accuracy": 0.785,
+      "f1": 0.782,
+      "roc_auc": 0.865,
+      "note": "Valores aproximados — confirmar na execução Colab"
+    },
+    "best_model": "random_forest"
+  },
+  "regression": {
+    "linear_regression": {
+      "mae": 6588.07,
+      "rmse": 9227.46,
+      "r2": 0.4509
+    },
+    "random_forest_regressor": {
+      "best_params": { "reg__max_depth": 20, "reg__min_samples_leaf": 1 },
+      "mae": 4828.45,
+      "rmse": 7896.28,
+      "r2": 0.5979
+    },
+    "best_model": "random_forest_regressor"
+  }
+}
