@@ -1,0 +1,2 @@
+# Evita diff fantasma em notebooks no Windows (CRLF)
+*.ipynb text eol=lf
