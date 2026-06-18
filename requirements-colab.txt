@@ -1,5 +1,5 @@
 # Testado em Python 3.10+ no Google Colab (jun/2026).
-# Instalar no notebook 00: !pip install -q -r requirements-colab.txt
+# Instalar no notebook 00; o runtime reinicia uma vez após o pip (numpy no Colab).
 pandas==3.0.3
 numpy==2.4.6
 scikit-learn==1.9.0
