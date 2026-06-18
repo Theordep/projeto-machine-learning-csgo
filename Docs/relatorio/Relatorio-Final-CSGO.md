@@ -67,7 +67,7 @@ Desenvolver e comparar modelos de **Machine Learning Clássico** para prever o v
 ## 3.1 Domínio (CS:GO)
 
 - **Round:** unidade de disputa; vence quem elimina o adversário, planta/desarma bomba ou expira o tempo.  
-- **Buy tiers:** eco (&lt; $2.000), half, force, full (≥ $10.000).  
+- **Buy tiers** (proxy: `ct_money`/`t_money` ÷ 5 jogadores): force (&lt; $1.700), eco (&lt; $2.000), half ($2.800–$3.799), full (≥ $4.700), mixed nas transições. Regra de saldo pós-compra e **loss bonus** não modelados (ausentes no dataset).  
 - **AWP:** sniper de alto impacto tático.  
 - **Win probability:** estimativa da chance de vitória dado o estado do round.
 
@@ -115,7 +115,9 @@ Desenvolver e comparar modelos de **Machine Learning Clássico** para prever o v
 
 **Resultado:** 122.410 → **33.365 linhas**
 
-**Features derivadas:** `money_diff`, diffs de vida/armadura/jogadores, `money_ratio`, AWP, contagem rifles/util, buy tier, `target_cls`.
+**Features derivadas:** `money_diff`, diffs de vida/armadura/jogadores, `money_ratio`, AWP, contagem rifles/util, buy tier (`ct_money`/`t_money` ÷ 5: force &lt; $1.700, eco &lt; $2.000, half $2.800–$3.799, full ≥ $4.700, mixed nas transições), `target_cls`.
+
+**Limitação (buy tier):** média por jogador como proxy; loss bonus e saldo pós-compra não disponíveis no dataset.
 
 **Pipeline:** `StandardScaler` (numéricas) + `OneHotEncoder` (mapa, buy tier).  
 **Split:** 80% treino / 20% teste (estratificado na classificação).  

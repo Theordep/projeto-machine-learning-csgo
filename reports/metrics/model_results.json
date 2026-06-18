@@ -1,7 +1,7 @@
 {
   "rows_used": 33365,
   "svm_max_train_samples": 6000,
-  "note": "Métricas de referência (pipeline local validado). Reproduza no Colab via 03_Modelagem ou COLAB_PROJETO-COMPLETO.",
+  "note": "Métricas de referência (pipeline anterior). Buy tiers atualizados (média por jogador). Reexecute no Colab para métricas atualizadas.",
   "classification": {
     "logistic_regression": {
       "best_params": { "clf__C": 0.1 },

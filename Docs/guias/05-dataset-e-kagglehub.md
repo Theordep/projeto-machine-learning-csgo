@@ -70,7 +70,13 @@ Resultado esperado: ~33 mil linhas (após filtros).
 - `ct_has_awp`, `t_has_awp`
 - `ct_rifle_count`, `t_rifle_count` (soma de rifles)
 - `ct_util_count`, `t_util_count` (granadas)
-- `ct_buy_tier`, `t_buy_tier` (eco / half / force / full)
+- `ct_buy_tier`, `t_buy_tier` — classificação por **média de dinheiro por jogador** (`team_money / 5`):
+  - **force:** &lt; $1.700/jogador
+  - **eco:** $1.700 – $1.999
+  - **mixed:** faixas de transição ($2.000–$2.799 e $3.800–$4.699)
+  - **half:** $2.800 – $3.799
+  - **full:** ≥ $4.700
+  - *Limitações:* proxy de média (dinheiro real é desigual entre jogadores); regra de saldo mínimo pós-compra (half) e **loss bonus** não estão no dataset.
 - `target_cls` = 1 se `round_winner == "T"`, senão 0
 
 ## Política de versionamento
