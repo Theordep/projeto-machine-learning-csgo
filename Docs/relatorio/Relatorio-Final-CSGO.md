@@ -107,7 +107,7 @@ Detalhamento e links: `Docs/slides/referencias-e-trabalhos-relacionados.md`.
 
 - **Execução:** Google Colab (CPU)  
 - **Linguagem:** Python 3.10+  
-- **Bibliotecas:** pandas 3.0.3, scikit-learn 1.9.0, kagglehub  
+- **Bibliotecas:** scikit-learn 1.9.0, kagglehub, seaborn; pandas/numpy do ambiente Colab  
 - **Notebooks:** `00_Setup` → `01_EDA` → `02_Preprocessamento` → `03_Modelagem`  
 - **Consolidado:** `COLAB_PROJETO-COMPLETO.ipynb` (Runtime → Executar tudo)
 

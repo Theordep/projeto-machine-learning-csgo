@@ -90,10 +90,13 @@ CONTRIBUTING.md
 
 ## Dependências (Colab)
 
+Instaladas pelo notebook (`requirements-colab.txt`):
+
 ```
-pandas==3.0.3  numpy==2.4.6  scikit-learn==1.9.0
-matplotlib==3.10.9  seaborn==0.13.2  kagglehub==1.0.1
+kagglehub==1.0.1  scikit-learn==1.9.0  seaborn==0.13.2
 ```
+
+`pandas`, `numpy` e `matplotlib` usam as versões já presentes no Google Colab.
 
 ## Entregas acadêmicas
 

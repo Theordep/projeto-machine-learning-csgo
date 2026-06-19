@@ -243,7 +243,7 @@ Guias:   Docs/guias/00-indice.md
 
 ## Antes da defesa — checklist geral
 
-- [ ] Rodar `COLAB_PROJETO-COMPLETO` uma vez (Executar tudo **2×** na 1ª sessão)
+- [ ] Rodar `COLAB_PROJETO-COMPLETO` uma vez (**Runtime → Executar tudo**)
 - [ ] Exportar figuras `01_`, `10_`, `11_`, `12_` para os slides
 - [ ] Ensaiar transições entre os 3 blocos
 - [ ] Ter link do GitHub na última slide

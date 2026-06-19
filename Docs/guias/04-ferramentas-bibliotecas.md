@@ -8,10 +8,10 @@
 
 | Pacote | Versão (requirements-colab) | Uso no projeto |
 |--------|----------------------------|----------------|
-| **pandas** | 3.0.3 | Leitura CSV, manipulação, agregações na EDA |
-| **numpy** | 2.4.6 | Operações numéricas, arrays |
+| **pandas** | *(ambiente Colab)* | Leitura CSV, manipulação, agregações na EDA |
+| **numpy** | *(ambiente Colab)* | Operações numéricas, arrays |
 | **scikit-learn** | 1.9.0 | Pré-processamento, modelos, métricas, pipelines |
-| **matplotlib** | 3.10.9 | Gráficos base |
+| **matplotlib** | *(ambiente Colab)* | Gráficos base |
 | **seaborn** | 0.13.2 | Gráficos estatísticos (distribuições, heatmaps) |
 | **kagglehub** | 1.0.1 | Download do dataset sem CLI manual |
 
