@@ -81,6 +81,24 @@ Desenvolver e comparar modelos de **Machine Learning Clássico** para prever o v
 | **Random Forest** | Classificação e regressão | Ensemble, feature importance |
 | **Regressão Linear** | Regressão | Baseline contínua |
 
+## 3.3 Trabalhos relacionados
+
+O problema de prever o vencedor de rounds em CS:GO com dados de snapshots **não é inédito**. A linha de trabalhos abaixo fundamenta nossa escolha de dataset e posiciona a contribuição do grupo.
+
+| Referência | Abordagem | Relação com nosso projeto |
+|------------|-----------|---------------------------|
+| **Skybox CS:GO AI Challenge** (2020) | Desafio de IA em demos profissionais | **Origem dos dados** (~700 partidas, snapshots periódicos) |
+| **Lillelund** — dataset Kaggle | Publicação do CSV 122k × 97 | **Dataset utilizado** (download via kagglehub) |
+| **Hiemstra** (2021) | Probabilidade de vitória com **estatística Bayesiana** no mesmo CSV | Mesmo problema; método diferente (Bayes vs ML supervisionado) |
+| **Ghosh** — GitHub | LR, LDA, Random Forest | Inspiração para baselines; nós estendemos com SVM, **KNN** e regressão |
+| **CSGOPredictor** (d-roho) | LR em tempo real via GSI | Mostra aplicação prática; nosso foco é comparativo e acadêmico |
+| **thecml** — csgo-ai-challenge | TensorFlow, CatBoost, ensembles | Mesmo dataset; disciplina exige **ML clássico** |
+| **Xenopoulos et al.** (KDD, 2022) | Mineração de trajetórias/ações em CS:GO | Contexto acadêmico em esports analytics |
+
+**Contribuição deste trabalho:** pipeline **reproduzível no Colab**, EDA com análise de leakage, feature engineering (buy tier, armamento), comparação de **quatro classificadores e dois regressores** com métricas F1, ROC-AUC, MAE, RMSE e R², e documentação em `Docs/guias/`.
+
+Detalhamento e links: `Docs/slides/referencias-e-trabalhos-relacionados.md`.
+
 ---
 
 # 4. METODOLOGIA
@@ -204,15 +222,27 @@ Trabalhos futuros: dados CS2, ID de round para split agrupado, dashboard de prob
 
 LILLELUND, Christian. **CS:GO round winner classification**. Kaggle, 2020. Disponível em: https://www.kaggle.com/datasets/christianlillelund/csgo-round-winner-classification. Acesso em: 8 jun. 2026.
 
+SKYBOX. **CS:GO AI Challenge**. Skybox.gg, 2020. Disponível em: https://skybox.gg/blog/csgo-predictions-showcased-at-blast-premier. Acesso em: 8 jun. 2026.
+
+HIEMSTRA, Paul. Who will win the next round of Counter-Strike: Global Offensive? **Towards Data Science** (Medium), 2021. Disponível em: https://medium.com/data-science/who-will-win-the-next-round-of-counter-strike-global-offensive-de574a4f37f4. Acesso em: 8 jun. 2026.
+
+GOSH, Soumyadeep. **CS-GO Round Win Predictor**. GitHub, 2020. Disponível em: https://github.com/soumyadeepghoshGG/CS-GO-Round-Win-Predictor. Acesso em: 8 jun. 2026.
+
+CSGOPREDICTOR. **CSGOPredictor** — live round winner predictions. GitHub. Disponível em: https://github.com/d-roho/CSGOPredictor. Acesso em: 8 jun. 2026.
+
+THECML. **csgo-ai-challenge**. GitHub, 2020. Disponível em: https://github.com/thecml/csgo-ai-challenge. Acesso em: 8 jun. 2026.
+
+SAMANTA, Gyanesh. **CS-GO-Round-winner-classification**. GitHub. Disponível em: https://github.com/GyaneshSamanta/CS-GO-Round-winner-classification. Acesso em: 8 jun. 2026.
+
+XENOPOULOS, Peter et al. Trajectory and player action mining in CSGO. **KDD Workshop**, 2022.
+
 PEDREGOSA, Fabian et al. Scikit-learn: Machine Learning in Python. **Journal of Machine Learning Research**, v. 12, p. 2825-2830, 2011.
 
 BREIMAN, Leo. Random forests. **Machine Learning**, v. 45, n. 1, p. 5-32, 2001.
 
 CORTES, Corinna; VAPNIK, Vladimir. Support-vector networks. **Machine Learning**, v. 20, n. 3, p. 273-297, 1995.
 
-XENOPOULOS, Peter et al. Trajectory and player action mining in CSGO. **KDD Workshop**, 2022.
-
-SKYBOX. **CS:GO AI Challenge**. Skybox.gg, 2020. Disponível em: https://skybox.gg/blog/csgo-predictions-showcased-at-blast-premier. Acesso em: 8 jun. 2026.
+COVER, Thomas; HART, Peter. Nearest neighbor pattern classification. **IEEE Transactions on Information Theory**, v. 13, n. 1, p. 21-27, 1967.
 
 ---
 

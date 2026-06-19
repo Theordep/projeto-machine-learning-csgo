@@ -22,5 +22,6 @@ Para quem vai codar: também 04, 05 e 07.
 
 - `Docs/Projeto_Final-Documento-a-seguir.docx` — enunciado / orientações da disciplina
 - `Docs/relatorio/Relatorio-Final-CSGO.md` — relatório ABNT (fonte para Word)
-- `Docs/slides/` — roteiro e conteúdo dos slides
+- `Docs/slides/` — roteiro, slides e **referências/trabalhos relacionados**
+  - [`referencias-e-trabalhos-relacionados.md`](../slides/referencias-e-trabalhos-relacionados.md)
 - `EQUIPE.md` (raiz) — integrantes e papéis

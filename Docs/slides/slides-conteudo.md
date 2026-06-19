@@ -27,6 +27,17 @@ Pedro Ernesto · Carlos Eduardo · Karen
 
 ---
 
+## Slide 3b — Trabalhos relacionados (cite o professor)
+- **Skybox AI Challenge (2020)** — origem dos dados  
+- **Kaggle / Lillelund** — 122k snapshots (nosso dataset)  
+- **Hiemstra** — probabilidade Bayesiana no mesmo CSV  
+- **GitHub:** Ghosh (LR, RF), CSGOPredictor (tempo real), thecml (ensembles)  
+- **Nosso trabalho** — ML clássico comparativo: LR, SVM, KNN, RF + regressão  
+
+*Detalhe: `Docs/slides/referencias-e-trabalhos-relacionados.md`*
+
+---
+
 ## Slide 4 — Dataset
 - Kaggle: CS:GO Round Winner Classification  
 - 122.410 linhas × 97 colunas, 0 nulos  
@@ -105,3 +116,14 @@ Otimização: GridSearchCV, métrica F1
 
 **Link:** https://github.com/Theordep/projeto-machine-learning-csgo  
 **Colab:** `COLAB_PROJETO-COMPLETO.ipynb`
+
+---
+
+## Slide 13 — Referências (ABNT resumido)
+- **Dados:** Lillelund (Kaggle, 2020); Skybox AI Challenge  
+- **Trabalhos relacionados:** Hiemstra (Bayes); Ghosh, CSGOPredictor (GitHub)  
+- **Ferramentas:** Pedregosa et al. (scikit-learn, 2011)  
+- **Algoritmos:** Breiman (RF); Cortes & Vapnik (SVM); Cover & Hart (KNN)  
+- **Domínio:** Xenopoulos et al. (CS:GO analytics, KDD 2022)  
+
+Lista completa: `Docs/relatorio/Relatorio-Final-CSGO.md`

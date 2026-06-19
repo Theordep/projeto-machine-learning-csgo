@@ -1,5 +1,7 @@
 # Roteiro de apresentação (10–15 min)
 
+> **Versão em 3 partes (EDA → Pré-processamento → Modelagem):** [`roteiro-3-partes.md`](roteiro-3-partes.md)
+
 **Trabalho:** Predição de vitória de round em CS:GO com ML Clássico  
 **Repositório:** https://github.com/Theordep/projeto-machine-learning-csgo
 

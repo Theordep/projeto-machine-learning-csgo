@@ -64,6 +64,7 @@ Versões de pacotes fixadas em `requirements-colab.txt` para reprodutibilidade.
 | Problema | Solução |
 |----------|---------|
 | `ImportError` numpy `_center` / sklearn | Rodar célula de `pip install` do 00 e **reiniciar runtime** (o notebook consolidado reinicia sozinho na 1ª vez; depois **Executar tudo** de novo) |
+| `threadpoolctl` / `dlopen OSError` após classificação | Aviso conhecido no Colab com `n_jobs=-1`; notebook usa `N_JOBS=2`. Se persistir, ignore — treino costuma terminar |
 | `ModuleNotFoundError` | Rodar de novo a célula `pip install` do 00 |
 | Erro Kaggle / 403 | Verificar `kaggle.json` ou secrets |
 | Caminho do CSV errado | Usar variável `DATA_RAW` definida no 00 |
